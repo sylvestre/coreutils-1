@@ -243,7 +243,7 @@ all_tests =					\
   tests/fmt/non-space.sh			\
   tests/misc/echo.sh				\
   tests/misc/env.sh				\
-  tests/misc/env-signal-handler.sh		\
+  tests/env/env-signal-handler.sh		\
   tests/misc/ptx.pl				\
   tests/misc/test.pl				\
   tests/seq/seq.pl				\
@@ -307,9 +307,9 @@ all_tests =					\
   tests/date/date-tz.sh				\
   tests/misc/dircolors.pl			\
   tests/misc/dirname.pl				\
-  tests/misc/env-null.sh			\
-  tests/misc/env-S.pl				\
-  tests/misc/env-S-script.sh			\
+  tests/env/env-null.sh			\
+  tests/env/env-S.pl				\
+  tests/env/env-S-script.sh			\
   tests/misc/expand.pl				\
   tests/misc/expr.pl				\
   tests/misc/expr-multibyte.pl			\
