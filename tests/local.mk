@@ -273,8 +273,8 @@ all_tests =					\
   tests/pwd/pwd-option.sh			\
   tests/chcon/chcon-fail.sh			\
   tests/misc/coreutils.sh			\
-  tests/misc/cut.pl				\
-  tests/misc/cut-huge-range.sh			\
+  tests/cut/cut.pl				\
+  tests/cut/cut-huge-range.sh			\
   tests/wc/wc.pl				\
   tests/wc/wc-files0-from.pl			\
   tests/wc/wc-files0.sh			\
