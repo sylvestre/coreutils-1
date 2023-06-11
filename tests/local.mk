@@ -352,8 +352,8 @@ all_tests =					\
   tests/printf/printf-surprise.sh			\
   tests/printf/printf-quote.sh			\
   tests/pwd/pwd-long.sh			\
-  tests/misc/readlink-fp-loop.sh		\
-  tests/misc/readlink-root.sh			\
+  tests/readlink/readlink-fp-loop.sh		\
+  tests/readlink/readlink-root.sh			\
   tests/misc/realpath.sh			\
   tests/misc/runcon-compute.sh			\
   tests/misc/runcon-no-reorder.sh		\
