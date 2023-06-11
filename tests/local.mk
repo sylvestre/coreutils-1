@@ -172,7 +172,7 @@ all_tests =					\
   tests/rm/cycle.sh				\
   tests/cp/link-heap.sh				\
   tests/cp/no-ctx.sh				\
-  tests/misc/tty-eof.pl				\
+  tests/tty/tty-eof.pl				\
   tests/misc/read-errors.sh			\
   tests/tail-2/inotify-hash-abuse.sh		\
   tests/tail-2/inotify-hash-abuse2.sh		\
@@ -447,7 +447,7 @@ all_tests =					\
   tests/truncate/truncate-parameters.sh		\
   tests/truncate/truncate-relative.sh		\
   tests/misc/tsort.pl				\
-  tests/misc/tty.sh				\
+  tests/tty/tty.sh				\
   tests/misc/usage_vs_getopt.sh			\
   tests/misc/unexpand.pl			\
   tests/misc/uniq.pl				\
