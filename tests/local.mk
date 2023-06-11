@@ -424,8 +424,8 @@ all_tests =					\
   tests/misc/sum-sysv.sh			\
   tests/misc/sync.sh				\
   tests/misc/tac.pl				\
-  tests/misc/tac-continue.sh			\
-  tests/misc/tac-2-nonseekable.sh		\
+  tests/tac/tac-continue.sh			\
+  tests/tac/tac-2-nonseekable.sh		\
   tests/misc/tail.pl				\
   tests/misc/tee.sh				\
   tests/misc/test-N.sh				\
