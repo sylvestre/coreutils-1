@@ -334,9 +334,9 @@ all_tests =					\
   tests/misc/nice-fail.sh			\
   tests/misc/nl.sh				\
   tests/misc/nohup.sh				\
-  tests/misc/nproc-avail.sh			\
-  tests/misc/nproc-positive.sh			\
-  tests/misc/nproc-override.sh			\
+  tests/nproc/nproc-avail.sh			\
+  tests/nproc/nproc-positive.sh			\
+  tests/nproc/nproc-override.sh			\
   tests/misc/numfmt.pl				\
   tests/misc/od-N.sh				\
   tests/misc/od-j.sh				\
