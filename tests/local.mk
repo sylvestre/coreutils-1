@@ -436,8 +436,8 @@ all_tests =					\
   tests/timeout/timeout-group.sh			\
   tests/timeout/timeout-large-parameters.sh	\
   tests/timeout/timeout-parameters.sh		\
-  tests/misc/tr.pl				\
-  tests/misc/tr-case-class.sh			\
+  tests/tr/tr.pl				\
+  tests/tr/tr-case-class.sh			\
   tests/truncate/truncate-dangling-symlink.sh	\
   tests/truncate/truncate-dir-fail.sh		\
   tests/truncate/truncate-fail-diag.sh		\
