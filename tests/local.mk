@@ -326,9 +326,9 @@ all_tests =					\
   tests/misc/kill.sh				\
   tests/misc/b2sum.sh				\
   tests/misc/md5sum.pl				\
-  tests/misc/md5sum-bsd.sh			\
-  tests/misc/md5sum-newline.pl			\
-  tests/misc/md5sum-parallel.sh			\
+  tests/md5sum/md5sum-bsd.sh			\
+  tests/md5sum/md5sum-newline.pl			\
+  tests/md5sum/md5sum-parallel.sh			\
   tests/misc/mknod.sh				\
   tests/misc/nice.sh				\
   tests/misc/nice-fail.sh			\
