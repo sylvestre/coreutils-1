@@ -264,8 +264,8 @@ all_tests =					\
   tests/tail-2/overlay-headers.sh		\
   tests/tail-2/pid.sh				\
   tests/misc/od.pl				\
-  tests/misc/od-endian.sh			\
-  tests/misc/od-float.sh			\
+  tests/od/od-endian.sh			\
+  tests/od/od-float.sh			\
   tests/misc/mktemp.pl				\
   tests/misc/arch.sh				\
   tests/misc/join.pl				\
@@ -338,10 +338,10 @@ all_tests =					\
   tests/nproc/nproc-positive.sh			\
   tests/nproc/nproc-override.sh			\
   tests/misc/numfmt.pl				\
-  tests/misc/od-N.sh				\
-  tests/misc/od-j.sh				\
-  tests/misc/od-multiple-t.sh			\
-  tests/misc/od-x8.sh				\
+  tests/od/od-N.sh				\
+  tests/od/od-j.sh				\
+  tests/od/od-multiple-t.sh			\
+  tests/od/od-x8.sh				\
   tests/misc/paste.pl				\
   tests/misc/pathchk1.sh			\
   tests/misc/printenv.sh			\
