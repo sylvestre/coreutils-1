@@ -357,8 +357,8 @@ all_tests =					\
   tests/misc/realpath.sh			\
   tests/runcon/runcon-compute.sh			\
   tests/runcon/runcon-no-reorder.sh		\
-  tests/misc/sha1sum.pl				\
-  tests/misc/sha1sum-vec.pl			\
+  tests/sha1sum/sha1sum.pl				\
+  tests/sha1sum/sha1sum-vec.pl			\
   tests/misc/sha224sum.pl			\
   tests/misc/sha256sum.pl			\
   tests/misc/sha384sum.pl			\
