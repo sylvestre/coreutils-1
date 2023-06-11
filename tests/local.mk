@@ -244,7 +244,7 @@ all_tests =					\
   tests/misc/echo.sh				\
   tests/misc/env.sh				\
   tests/env/env-signal-handler.sh		\
-  tests/misc/ptx.pl				\
+  tests/ptx/ptx.pl				\
   tests/misc/test.pl				\
   tests/seq/seq.pl				\
   tests/seq/seq-epipe.sh			\
@@ -259,7 +259,7 @@ all_tests =					\
   tests/ls/ls-misc.pl				\
   tests/misc/date.pl				\
   tests/date/date-next-dow.pl			\
-  tests/misc/ptx-overrun.sh			\
+  tests/ptx/ptx-overrun.sh			\
   tests/misc/xstrtol.pl				\
   tests/tail-2/overlay-headers.sh		\
   tests/tail-2/pid.sh				\
