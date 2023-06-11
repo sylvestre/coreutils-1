@@ -420,8 +420,8 @@ all_tests =					\
   tests/stty/stty-invalid.sh			\
   tests/stty/stty-pairs.sh			\
   tests/stty/stty-row-col.sh			\
-  tests/misc/sum.pl				\
-  tests/misc/sum-sysv.sh			\
+  tests/sum/sum.pl				\
+  tests/sum/sum-sysv.sh			\
   tests/misc/sync.sh				\
   tests/misc/tac.pl				\
   tests/tac/tac-continue.sh			\
