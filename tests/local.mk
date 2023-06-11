@@ -408,13 +408,13 @@ all_tests =					\
   tests/split/record-sep.sh			\
   tests/split/numeric.sh			\
   tests/split/guard-input.sh			\
-  tests/misc/stat-birthtime.sh			\
-  tests/misc/stat-fmt.sh			\
-  tests/misc/stat-hyphen.sh			\
-  tests/misc/stat-mount.sh			\
-  tests/misc/stat-nanoseconds.sh		\
-  tests/misc/stat-printf.pl			\
-  tests/misc/stat-slash.sh			\
+  tests/stat/stat-birthtime.sh			\
+  tests/stat/stat-fmt.sh			\
+  tests/stat/stat-hyphen.sh			\
+  tests/stat/stat-mount.sh			\
+  tests/stat/stat-nanoseconds.sh		\
+  tests/stat/stat-printf.pl			\
+  tests/stat/stat-slash.sh			\
   tests/misc/stdbuf.sh				\
   tests/misc/stty.sh				\
   tests/misc/stty-invalid.sh			\
