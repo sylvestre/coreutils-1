@@ -282,10 +282,10 @@ all_tests =					\
   tests/wc/wc-parallel.sh			\
   tests/wc/wc-proc.sh				\
   tests/wc/wc-total.sh			\
-  tests/misc/cat-E.sh				\
-  tests/misc/cat-proc.sh			\
-  tests/misc/cat-buf.sh				\
-  tests/misc/cat-self.sh			\
+  tests/cat/cat-E.sh				\
+  tests/cat/cat-proc.sh			\
+  tests/cat/cat-buf.sh				\
+  tests/cat/cat-self.sh			\
   tests/misc/base64.pl				\
   tests/misc/basename.pl			\
   tests/misc/basenc.pl				\
