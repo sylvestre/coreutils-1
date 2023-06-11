@@ -311,8 +311,8 @@ all_tests =					\
   tests/env/env-S.pl				\
   tests/env/env-S-script.sh			\
   tests/misc/expand.pl				\
-  tests/misc/expr.pl				\
-  tests/misc/expr-multibyte.pl			\
+  tests/expr/expr.pl				\
+  tests/expr/expr-multibyte.pl			\
   tests/misc/factor.pl				\
   tests/misc/factor-parallel.sh			\
   tests/misc/false-status.sh			\
