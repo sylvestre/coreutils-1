@@ -127,7 +127,7 @@ all_root_tests =				\
   tests/misc/chcon.sh				\
   tests/misc/chroot-credentials.sh		\
   tests/misc/selinux.sh				\
-  tests/misc/truncate-owned-by-other.sh		\
+  tests/truncate/truncate-owned-by-other.sh		\
   tests/mkdir/writable-under-readonly.sh	\
   tests/mkdir/smack-root.sh			\
   tests/mv/hardlink-case.sh			\
@@ -438,14 +438,14 @@ all_tests =					\
   tests/misc/timeout-parameters.sh		\
   tests/misc/tr.pl				\
   tests/misc/tr-case-class.sh			\
-  tests/misc/truncate-dangling-symlink.sh	\
-  tests/misc/truncate-dir-fail.sh		\
-  tests/misc/truncate-fail-diag.sh		\
-  tests/misc/truncate-fifo.sh			\
-  tests/misc/truncate-no-create-missing.sh	\
-  tests/misc/truncate-overflow.sh		\
-  tests/misc/truncate-parameters.sh		\
-  tests/misc/truncate-relative.sh		\
+  tests/truncate/truncate-dangling-symlink.sh	\
+  tests/truncate/truncate-dir-fail.sh		\
+  tests/truncate/truncate-fail-diag.sh		\
+  tests/truncate/truncate-fifo.sh			\
+  tests/truncate/truncate-no-create-missing.sh	\
+  tests/truncate/truncate-overflow.sh		\
+  tests/truncate/truncate-parameters.sh		\
+  tests/truncate/truncate-relative.sh		\
   tests/misc/tsort.pl				\
   tests/misc/tty.sh				\
   tests/misc/usage_vs_getopt.sh			\
