@@ -363,10 +363,10 @@ all_tests =					\
   tests/misc/sha256sum.pl			\
   tests/misc/sha384sum.pl			\
   tests/misc/sha512sum.pl			\
-  tests/misc/shred-exact.sh			\
-  tests/misc/shred-passes.sh			\
-  tests/misc/shred-remove.sh			\
-  tests/misc/shred-size.sh			\
+  tests/shred/shred-exact.sh			\
+  tests/shred/shred-passes.sh			\
+  tests/shred/shred-remove.sh			\
+  tests/shred/shred-size.sh			\
   tests/misc/shuf.sh				\
   tests/misc/shuf-reservoir.sh			\
   tests/misc/sleep.sh				\
