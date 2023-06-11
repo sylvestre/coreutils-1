@@ -346,11 +346,11 @@ all_tests =					\
   tests/misc/pathchk1.sh			\
   tests/misc/printenv.sh			\
   tests/misc/printf.sh				\
-  tests/misc/printf-cov.pl			\
-  tests/misc/printf-hex.sh			\
-  tests/misc/printf-mb.sh			\
-  tests/misc/printf-surprise.sh			\
-  tests/misc/printf-quote.sh			\
+  tests/printf/printf-cov.pl			\
+  tests/printf/printf-hex.sh			\
+  tests/printf/printf-mb.sh			\
+  tests/printf/printf-surprise.sh			\
+  tests/printf/printf-quote.sh			\
   tests/misc/pwd-long.sh			\
   tests/misc/readlink-fp-loop.sh		\
   tests/misc/readlink-root.sh			\
