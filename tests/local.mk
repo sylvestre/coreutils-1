@@ -372,29 +372,29 @@ all_tests =					\
   tests/misc/sleep.sh				\
   tests/misc/sm3sum.pl				\
   tests/misc/sort.pl				\
-  tests/misc/sort-benchmark-random.sh		\
-  tests/misc/sort-compress.sh			\
-  tests/misc/sort-compress-hang.sh		\
-  tests/misc/sort-compress-proc.sh		\
-  tests/misc/sort-continue.sh			\
-  tests/misc/sort-debug-keys.sh			\
-  tests/misc/sort-debug-warn.sh			\
-  tests/misc/sort-discrim.sh			\
-  tests/misc/sort-files0-from.pl		\
-  tests/misc/sort-float.sh			\
-  tests/misc/sort-h-thousands-sep.sh		\
-  tests/misc/sort-merge.pl			\
-  tests/misc/sort-merge-fdlimit.sh		\
-  tests/misc/sort-month.sh			\
-  tests/misc/sort-exit-early.sh			\
-  tests/misc/sort-rand.sh			\
-  tests/misc/sort-spinlock-abuse.sh		\
-  tests/misc/sort-stale-thread-mem.sh		\
-  tests/misc/sort-unique.sh			\
-  tests/misc/sort-unique-segv.sh		\
-  tests/misc/sort-version.sh			\
-  tests/misc/sort-NaN-infloop.sh		\
-  tests/misc/sort-u-FMR.sh			\
+  tests/sort/sort-benchmark-random.sh		\
+  tests/sort/sort-compress.sh			\
+  tests/sort/sort-compress-hang.sh		\
+  tests/sort/sort-compress-proc.sh		\
+  tests/sort/sort-continue.sh			\
+  tests/sort/sort-debug-keys.sh			\
+  tests/sort/sort-debug-warn.sh			\
+  tests/sort/sort-discrim.sh			\
+  tests/sort/sort-files0-from.pl		\
+  tests/sort/sort-float.sh			\
+  tests/sort/sort-h-thousands-sep.sh		\
+  tests/sort/sort-merge.pl			\
+  tests/sort/sort-merge-fdlimit.sh		\
+  tests/sort/sort-month.sh			\
+  tests/sort/sort-exit-early.sh			\
+  tests/sort/sort-rand.sh			\
+  tests/sort/sort-spinlock-abuse.sh		\
+  tests/sort/sort-stale-thread-mem.sh		\
+  tests/sort/sort-unique.sh			\
+  tests/sort/sort-unique-segv.sh		\
+  tests/sort/sort-version.sh			\
+  tests/sort/sort-NaN-infloop.sh		\
+  tests/sort/sort-u-FMR.sh			\
   tests/split/filter.sh				\
   tests/split/suffix-auto-length.sh		\
   tests/split/suffix-length.sh			\
