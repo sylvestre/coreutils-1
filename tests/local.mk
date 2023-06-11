@@ -125,7 +125,7 @@ all_root_tests =				\
   tests/ls/capability.sh			\
   tests/ls/nameless-uid.sh			\
   tests/misc/chcon.sh				\
-  tests/misc/chroot-credentials.sh		\
+  tests/chroot/chroot-credentials.sh		\
   tests/misc/selinux.sh				\
   tests/truncate/truncate-owned-by-other.sh		\
   tests/mkdir/writable-under-readonly.sh	\
@@ -290,7 +290,7 @@ all_tests =					\
   tests/misc/basename.pl			\
   tests/misc/basenc.pl				\
   tests/misc/close-stdout.sh			\
-  tests/misc/chroot-fail.sh			\
+  tests/chroot/chroot-fail.sh			\
   tests/misc/cksum.sh				\
   tests/cksum/cksum-a.sh				\
   tests/cksum/cksum-c.sh				\
