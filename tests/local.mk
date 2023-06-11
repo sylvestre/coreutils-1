@@ -124,7 +124,7 @@ all_root_tests =				\
   tests/install/install-C-root.sh		\
   tests/ls/capability.sh			\
   tests/ls/nameless-uid.sh			\
-  tests/misc/chcon.sh				\
+  tests/chcon/chcon.sh				\
   tests/chroot/chroot-credentials.sh		\
   tests/misc/selinux.sh				\
   tests/truncate/truncate-owned-by-other.sh		\
@@ -271,7 +271,7 @@ all_tests =					\
   tests/misc/join.pl				\
   tests/pr/pr-tests.pl				\
   tests/pwd/pwd-option.sh			\
-  tests/misc/chcon-fail.sh			\
+  tests/chcon/chcon-fail.sh			\
   tests/misc/coreutils.sh			\
   tests/misc/cut.pl				\
   tests/misc/cut-huge-range.sh			\
