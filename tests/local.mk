@@ -451,8 +451,8 @@ all_tests =					\
   tests/misc/usage_vs_getopt.sh			\
   tests/misc/unexpand.pl			\
   tests/misc/uniq.pl				\
-  tests/misc/uniq-perf.sh			\
-  tests/misc/uniq-collate.sh			\
+  tests/uniq/uniq-perf.sh			\
+  tests/uniq/uniq-collate.sh			\
   tests/misc/xattr.sh				\
   tests/misc/yes.sh				\
   tests/tail-2/wait.sh				\
