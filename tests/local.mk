@@ -246,13 +246,13 @@ all_tests =					\
   tests/misc/env-signal-handler.sh		\
   tests/misc/ptx.pl				\
   tests/misc/test.pl				\
-  tests/misc/seq.pl				\
-  tests/misc/seq-epipe.sh			\
-  tests/misc/seq-extra-number.sh		\
-  tests/misc/seq-io-errors.sh			\
-  tests/misc/seq-locale.sh			\
-  tests/misc/seq-long-double.sh			\
-  tests/misc/seq-precision.sh			\
+  tests/seq/seq.pl				\
+  tests/seq/seq-epipe.sh			\
+  tests/seq/seq-extra-number.sh		\
+  tests/seq/seq-io-errors.sh			\
+  tests/seq/seq-locale.sh			\
+  tests/seq/seq-long-double.sh			\
+  tests/seq/seq-precision.sh			\
   tests/misc/head.pl				\
   tests/misc/head-elide-tail.pl			\
   tests/tail-2/tail-n0f.sh			\
