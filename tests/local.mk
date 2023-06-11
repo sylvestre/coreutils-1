@@ -367,8 +367,8 @@ all_tests =					\
   tests/shred/shred-passes.sh			\
   tests/shred/shred-remove.sh			\
   tests/shred/shred-size.sh			\
-  tests/misc/shuf.sh				\
-  tests/misc/shuf-reservoir.sh			\
+  tests/shuf/shuf.sh				\
+  tests/shuf/shuf-reservoir.sh			\
   tests/misc/sleep.sh				\
   tests/misc/sm3sum.pl				\
   tests/misc/sort.pl				\
