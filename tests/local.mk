@@ -163,8 +163,8 @@ check-root:
 # Put head-elide-tail early, because it's long-running.
 
 all_tests =					\
-  tests/misc/help-version.sh			\
-  tests/misc/help-version-getopt.sh		\
+  tests/help/help-version.sh			\
+  tests/help/help-version-getopt.sh		\
   tests/tail-2/inotify-race.sh			\
   tests/tail-2/inotify-race2.sh			\
   tests/misc/invalid-opt.pl			\
