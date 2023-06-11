@@ -330,8 +330,8 @@ all_tests =					\
   tests/md5sum/md5sum-newline.pl			\
   tests/md5sum/md5sum-parallel.sh			\
   tests/misc/mknod.sh				\
-  tests/misc/nice.sh				\
-  tests/misc/nice-fail.sh			\
+  tests/nice/nice.sh				\
+  tests/nice/nice-fail.sh			\
   tests/misc/nl.sh				\
   tests/misc/nohup.sh				\
   tests/nproc/nproc-avail.sh			\
