@@ -313,8 +313,8 @@ all_tests =					\
   tests/misc/expand.pl				\
   tests/expr/expr.pl				\
   tests/expr/expr-multibyte.pl			\
-  tests/misc/factor.pl				\
-  tests/misc/factor-parallel.sh			\
+  tests/factor/factor.pl				\
+  tests/factor/factor-parallel.sh			\
   tests/misc/false-status.sh			\
   tests/misc/fold.pl				\
   tests/groups/groups-dash.sh			\
