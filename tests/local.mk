@@ -254,7 +254,7 @@ all_tests =					\
   tests/seq/seq-long-double.sh			\
   tests/seq/seq-precision.sh			\
   tests/misc/head.pl				\
-  tests/misc/head-elide-tail.pl			\
+  tests/head/head-elide-tail.pl			\
   tests/tail-2/tail-n0f.sh			\
   tests/misc/ls-misc.pl				\
   tests/misc/date.pl				\
@@ -320,9 +320,9 @@ all_tests =					\
   tests/groups/groups-dash.sh			\
   tests/groups/groups-process-all.sh		\
   tests/groups/groups-version.sh			\
-  tests/misc/head-c.sh				\
-  tests/misc/head-pos.sh			\
-  tests/misc/head-write-error.sh		\
+  tests/head/head-c.sh				\
+  tests/head/head-pos.sh			\
+  tests/head/head-write-error.sh		\
   tests/misc/kill.sh				\
   tests/misc/b2sum.sh				\
   tests/misc/md5sum.pl				\
