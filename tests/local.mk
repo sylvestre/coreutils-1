@@ -258,7 +258,7 @@ all_tests =					\
   tests/tail-2/tail-n0f.sh			\
   tests/misc/ls-misc.pl				\
   tests/misc/date.pl				\
-  tests/misc/date-next-dow.pl			\
+  tests/date/date-next-dow.pl			\
   tests/misc/ptx-overrun.sh			\
   tests/misc/xstrtol.pl				\
   tests/tail-2/overlay-headers.sh		\
@@ -302,9 +302,9 @@ all_tests =					\
   tests/csplit/csplit-heap.sh			\
   tests/csplit/csplit-io-err.sh			\
   tests/csplit/csplit-suppress-matched.pl		\
-  tests/misc/date-debug.sh			\
-  tests/misc/date-sec.sh			\
-  tests/misc/date-tz.sh				\
+  tests/date/date-debug.sh			\
+  tests/date/date-sec.sh			\
+  tests/date/date-tz.sh				\
   tests/misc/dircolors.pl			\
   tests/misc/dirname.pl				\
   tests/misc/env-null.sh			\
