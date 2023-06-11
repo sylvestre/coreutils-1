@@ -275,13 +275,13 @@ all_tests =					\
   tests/misc/coreutils.sh			\
   tests/misc/cut.pl				\
   tests/misc/cut-huge-range.sh			\
-  tests/misc/wc.pl				\
-  tests/misc/wc-files0-from.pl			\
-  tests/misc/wc-files0.sh			\
-  tests/misc/wc-nbsp.sh				\
-  tests/misc/wc-parallel.sh			\
-  tests/misc/wc-proc.sh				\
-  tests/misc/wc-total.sh			\
+  tests/wc/wc.pl				\
+  tests/wc/wc-files0-from.pl			\
+  tests/wc/wc-files0.sh			\
+  tests/wc/wc-nbsp.sh				\
+  tests/wc/wc-parallel.sh			\
+  tests/wc/wc-proc.sh				\
+  tests/wc/wc-total.sh			\
   tests/misc/cat-E.sh				\
   tests/misc/cat-proc.sh			\
   tests/misc/cat-buf.sh				\
