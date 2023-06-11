@@ -298,10 +298,10 @@ all_tests =					\
   tests/cksum/cksum-raw.sh			\
   tests/misc/comm.pl				\
   tests/misc/csplit.sh				\
-  tests/misc/csplit-1000.sh			\
-  tests/misc/csplit-heap.sh			\
-  tests/misc/csplit-io-err.sh			\
-  tests/misc/csplit-suppress-matched.pl		\
+  tests/csplit/csplit-1000.sh			\
+  tests/csplit/csplit-heap.sh			\
+  tests/csplit/csplit-io-err.sh			\
+  tests/csplit/csplit-suppress-matched.pl		\
   tests/misc/date-debug.sh			\
   tests/misc/date-sec.sh			\
   tests/misc/date-tz.sh				\
