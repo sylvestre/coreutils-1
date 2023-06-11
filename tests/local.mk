@@ -270,7 +270,7 @@ all_tests =					\
   tests/misc/arch.sh				\
   tests/misc/join.pl				\
   tests/pr/pr-tests.pl				\
-  tests/misc/pwd-option.sh			\
+  tests/pwd/pwd-option.sh			\
   tests/misc/chcon-fail.sh			\
   tests/misc/coreutils.sh			\
   tests/misc/cut.pl				\
@@ -351,7 +351,7 @@ all_tests =					\
   tests/printf/printf-mb.sh			\
   tests/printf/printf-surprise.sh			\
   tests/printf/printf-quote.sh			\
-  tests/misc/pwd-long.sh			\
+  tests/pwd/pwd-long.sh			\
   tests/misc/readlink-fp-loop.sh		\
   tests/misc/readlink-root.sh			\
   tests/misc/realpath.sh			\
