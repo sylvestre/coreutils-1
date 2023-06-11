@@ -431,11 +431,11 @@ all_tests =					\
   tests/misc/test-N.sh				\
   tests/misc/test-diag.pl			\
   tests/misc/time-style.sh			\
-  tests/misc/timeout.sh				\
-  tests/misc/timeout-blocked.pl			\
-  tests/misc/timeout-group.sh			\
-  tests/misc/timeout-large-parameters.sh	\
-  tests/misc/timeout-parameters.sh		\
+  tests/timeout/timeout.sh				\
+  tests/timeout/timeout-blocked.pl			\
+  tests/timeout/timeout-group.sh			\
+  tests/timeout/timeout-large-parameters.sh	\
+  tests/timeout/timeout-parameters.sh		\
   tests/misc/tr.pl				\
   tests/misc/tr-case-class.sh			\
   tests/truncate/truncate-dangling-symlink.sh	\
