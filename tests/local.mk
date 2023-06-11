@@ -417,9 +417,9 @@ all_tests =					\
   tests/stat/stat-slash.sh			\
   tests/misc/stdbuf.sh				\
   tests/misc/stty.sh				\
-  tests/misc/stty-invalid.sh			\
-  tests/misc/stty-pairs.sh			\
-  tests/misc/stty-row-col.sh			\
+  tests/stty/stty-invalid.sh			\
+  tests/stty/stty-pairs.sh			\
+  tests/stty/stty-row-col.sh			\
   tests/misc/sum.pl				\
   tests/misc/sum-sysv.sh			\
   tests/misc/sync.sh				\
