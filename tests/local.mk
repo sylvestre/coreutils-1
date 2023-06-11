@@ -187,7 +187,7 @@ all_tests =					\
   tests/chmod/no-x.sh				\
   tests/chgrp/basic.sh				\
   tests/rm/dangling-symlink.sh			\
-  tests/misc/ls-time.sh				\
+  tests/ls/ls-time.sh				\
   tests/rm/d-1.sh				\
   tests/rm/d-2.sh				\
   tests/rm/d-3.sh				\
@@ -256,7 +256,7 @@ all_tests =					\
   tests/misc/head.pl				\
   tests/head/head-elide-tail.pl			\
   tests/tail-2/tail-n0f.sh			\
-  tests/misc/ls-misc.pl				\
+  tests/ls/ls-misc.pl				\
   tests/misc/date.pl				\
   tests/date/date-next-dow.pl			\
   tests/misc/ptx-overrun.sh			\
