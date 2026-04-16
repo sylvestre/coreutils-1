@@ -721,6 +721,7 @@ all_tests =					\
   tests/ls/rt-1.sh				\
   tests/ls/selinux.sh				\
   tests/ls/slink-acl.sh				\
+  tests/ls/slink-indicator.sh			\
   tests/ls/stat-dtype.sh			\
   tests/ls/stat-failed.sh			\
   tests/ls/stat-free-color.sh			\
