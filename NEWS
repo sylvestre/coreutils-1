@@ -176,6 +176,9 @@ GNU coreutils NEWS                                    -*- outline -*-
   The configure option '--enable-systemd' is renamed to '--with-systemd'.
   The option '--enable-systemd' was a misnomer and is now deprecated.
 
+  The 'sort' binary now uses the UAPI Group's .note.dlopen ELF note
+  to indicate its dependency on libcrypto.
+
 
 * Noteworthy changes in release 9.11 (2026-04-20) [stable]
 

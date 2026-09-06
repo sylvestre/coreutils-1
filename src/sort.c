@@ -2370,6 +2370,14 @@ getmonth (char const *month, char **ea)
 # endif
 # include <dlfcn.h>
 
+/* Require distributions make OpenSSL available for hardware
+   optimized implementations of MD-5.  */
+# include "sd-dlopen.h"
+SD_ELF_NOTE_DLOPEN ("random-sort",
+                    "Support for random sorting",
+                    SD_ELF_NOTE_DLOPEN_PRIORITY_REQUIRED,
+                    LIBCRYPTO_SONAME);
+
 /* Diagnose a dynamic linking failure.  */
 static void
 link_failure (void)
