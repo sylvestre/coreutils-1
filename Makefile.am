@@ -95,7 +95,7 @@ dist-hook: gen-ChangeLog
 	  $(distdir)/doc/coreutils.info
 
 # Keep about 5 years of changelogs
-gen_start_ver = 8.32
+gen_start_ver = 9.0
 .PHONY: gen-ChangeLog
 gen-ChangeLog:
 	$(AM_V_GEN)if test -d .git; then				\
