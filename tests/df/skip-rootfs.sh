@@ -30,6 +30,8 @@ DF_a() { df -a -x fuse.portal "$@"; }
 # rather than /proc/mounts.  I.e., when libmount is being used.
 DF_a >out || fail=1
 grep '^rootfs' out || skip_ 'no rootfs in mtab'
+{ grep '^rootfs .* /init' out && test $(stat -f -c %T /init) = tmpfs; } &&
+  skip_ 'test not compatible with WSL'
 
 # Ensure that rootfs is suppressed when no options is specified.
 df >out || fail=1
