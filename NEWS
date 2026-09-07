@@ -103,9 +103,9 @@ GNU coreutils NEWS                                    -*- outline -*-
   from a file.  With -i, entries are preserved exactly, allowing full
   round-tripping of environments containing duplicate or nonstandard entries.
 
-  'stat' and 'tail' now know about the "nullfs" file system type.
+  'stat' and 'tail' now know about the "failfs" and "nullfs" file system types.
   stat -f -c%T now reports the file system type,
-  and tail -f uses inotify for this file system.
+  and tail -f uses inotify for these file systems.
 
   uname adds the -A,--all-labeled option to label all output, one item per line.
 

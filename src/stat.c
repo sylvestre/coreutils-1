@@ -371,6 +371,8 @@ human_fstype (STRUCT_STATVFS const *statfsbuf)
       return "ext2";
     case S_MAGIC_F2FS: /* 0xF2F52010 local */
       return "f2fs";
+    case S_MAGIC_FAIL_FS: /* 0x4641494C local */
+      return "failfs";
     case S_MAGIC_FAT: /* 0x4006 local */
       return "fat";
     case S_MAGIC_FHGFS: /* 0x19830326 remote */
