@@ -35,8 +35,8 @@ strace -o strace.out \
 ret=$?
 
 # This also implicitly checks for strace invocation issues
-grep -oE '^(fstat|ftruncate)' strace.out ||
-  skip_ 'ftruncate or fstat are not detected'
+grep -E '^(fstat|ftruncate).*INJECTED' strace.out ||
+  skip_ 'ftruncate or fstat are not intercepted'
 
 # After ftruncate fails, we use fstat to get the file type.
 echo "dd: cannot fstat 'out': $EPERM" > exp
