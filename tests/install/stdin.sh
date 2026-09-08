@@ -28,7 +28,8 @@ test -r "$tty" 2>&1 \
 
 # work around FreeBSD / macOS issue as discussed at:
 # https://lists.gnu.org/r/coreutils/2026-06/msg00004.html
-test $(stat -L -c%i /dev/stdin) = $(stat -L -c%i - </dev/stdin) ||
+# TODO: Look at possibly supporting FreeBSD / macOS here.
+test $(: | stat -L -c%i /dev/stdin - | uniq | wc -l) = 1 ||
   skip_ '/dev/stdin inode correlation mismatch'
 
 echo a >a || framework_failure_
