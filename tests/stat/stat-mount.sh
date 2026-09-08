@@ -29,7 +29,7 @@ esac
 hide_proc() {
   unshare -rm $SHELL -c 'mount -t tmpfs tmpfs /proc && "$@"' -- "$@"
 }
-if hide_proc true; then
+if hide_proc stat --version; then
   hide_proc mount; ret=$?
   if test "$ret" = 2; then  # Avoid segfaults under unshare on Guix
     hide_proc stat -c '0%#a' / || fail=1
