@@ -35,7 +35,11 @@ seq 17 >some-data
 # the ATF but fail inside it.
 
 (ulimit -n 19 && touch ulimit-worked &&
- returns_ 2 sort --batch-size=20 /dev/null) || fail=1
+   returns_ 2 sort --batch-size=20 /dev/null) || {
+     # GNU/Hurd seems to ignore 'ulimit -n'.  Check for that
+     # before failing.
+     (ulimit -n 0; cat /dev/null) || fail=1
+}
 rm ulimit-worked || skip_ 'cannot modify open file descriptor limit'
 
 # The default batch size (nmerge) is 16.
