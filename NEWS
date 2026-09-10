@@ -36,6 +36,11 @@ GNU coreutils NEWS                                    -*- outline -*-
   'head' and 'tail' now quote names in file headers when needed.
   [This bug was present in "the beginning".]
 
+  'ls --dired' now reports correct byte offsets when colors are enabled.
+  Previously the escape sequences written for colors were not counted,
+  so the reported offsets pointed before the file names.
+  [This bug was present in "the beginning".]
+
   'mv' now warns when copying extended attributes fails with ENOTSUP, e.g., when
   moving files to a file system that does not support them.
   [bug introduced in coreutils-7.3]

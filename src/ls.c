@@ -5073,7 +5073,8 @@ get_color_indicator (const struct fileinfo *f, bool symlink_target)
   return s->string ? s : NULL;
 }
 
-/* Output a color indicator (which may contain nulls).  */
+/* Output a color indicator (which may contain nulls),
+   accounting for its bytes with --dired.  */
 static void
 put_indicator (const struct bin_str *ind)
 {
@@ -5091,6 +5092,7 @@ put_indicator (const struct bin_str *ind)
       prep_non_filename_text ();
     }
 
+  dired_pos += ind->len;
   fwrite (ind->string, ind->len, 1, stdout);
 }
 

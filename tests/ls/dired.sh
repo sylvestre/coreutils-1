@@ -90,4 +90,22 @@ printf %s "$newline" > exp || framework_failure_
 compare exp actual || fail=1
 
 
+# The escape sequences emitted for --color are part of the output,
+# so they must be accounted for in the reported offsets.
+mkdir color-dir || framework_failure_
+mkdir color-dir/sub || framework_failure_
+touch color-dir/reg || framework_failure_
+LS_COLORS='no=33:di=01;34:fi=32' \
+  ls -lR --dired --color=always --quoting-style=literal color-dir > out \
+  || fail=1
+set -- $(sed -n 's|^//DIRED// ||p' out)
+test "$#" -eq 4 || framework_failure_
+for name in reg sub; do
+  dd bs=1 skip="$1" count="$(($2 - $1))" < out > actual 2>/dev/null \
+    || framework_failure_
+  printf %s "$name" > exp || framework_failure_
+  compare exp actual || fail=1
+  shift; shift
+done
+
 Exit $fail
