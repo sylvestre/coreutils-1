@@ -26,22 +26,25 @@ vm=$(get_min_ulimit_v_ timeout 10 dd if=f of=f2 status=none) \
   || skip_ 'shell lacks ulimit, or ASAN enabled'
 rm f f2 || framework_failure_
 
+# Give some head room for subshells etc.
+vm=$(($vm+6000)) || framework_failure_
+
 # Ensure dd exits with 1 if memory exhausted
-(ulimit -v $(($vm+6000)) && returns_ 1 \
+(ulimit -v $vm && returns_ 1 \
  dd if=/dev/null of=/dev/null bs=$(($SSIZE_MAX-1))) || fail=1
-(ulimit -v $(($vm+6000)) && returns_ 1 \
+(ulimit -v $vm && returns_ 1 \
  dd if=/dev/null of=/dev/null bs=$(($SSIZE_MAX-1)) skip=1) || fail=1
 # Ensure dd exits with 1 on numeric overflow
-(ulimit -v $(($vm+6000)) && returns_ 1 \
+(ulimit -v $vm && returns_ 1 \
  dd if=/dev/null of=/dev/null bs=$SIZE_OFLOW) || fail=1
 # Ensure dd exits with 1 on invalid number
-(ulimit -v $(($vm+6000)) && returns_ 1 \
+(ulimit -v $vm && returns_ 1 \
  dd if=/dev/null of=/dev/null bs=0) || fail=1
 
 # count and skip are zero, we don't need to allocate memory
-(ulimit -v $vm && dd  bs=30M count=0) || fail=1
-(ulimit -v $vm && dd ibs=30M count=0) || fail=1
-(ulimit -v $vm && dd obs=30M count=0) || fail=1
+(ulimit -v $vm && dd  bs=36M count=0) || fail=1
+(ulimit -v $vm && dd ibs=36M count=0) || fail=1
+(ulimit -v $vm && dd obs=36M count=0) || fail=1
 
 check_dd_seek_alloc() {
   local file="$1"
@@ -56,8 +59,8 @@ check_dd_seek_alloc() {
   timeout 10 dd count=1 if=/dev/zero of=tape&
 
   # Allocate buffer and read from the "tape"
-  (ulimit -v $(($vm+4000)) \
-     && timeout 10 dd $dd_buf=30M $dd_op=1 count=0 $dd_file=tape)
+  (ulimit -v $vm \
+     && timeout 10 dd $dd_buf=36M $dd_op=1 count=0 $dd_file=tape)
   local ret=$?
 
   # Be defensive in case the tape reader is blocked for some reason
