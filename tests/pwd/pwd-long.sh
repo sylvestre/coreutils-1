@@ -29,7 +29,7 @@ export ARGV_0
 
 # Disable the getcwd syscall if possible, so more of our code is exercised.
 no_sys_getcwd() {
-  strace -f -o /dev/null -e 'getcwd' -e fault=all:error=ENOSYS "$@"
+  strace -f -o /dev/null -e trace=getcwd -e fault=all:error=ENOSYS "$@"
 }
 no_sys_getcwd true || no_sys_getcwd() { "$@"; }
 

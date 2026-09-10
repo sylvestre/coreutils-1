@@ -40,7 +40,7 @@ fi
 # Verify splice is called multiple times,
 # and doesn't just fall back after the first EINVAL.
 # This also implicitly handles systems without splice at all.
-strace -o splice_count -e splice cat /dev/zero | head -c1M >/dev/null
+strace -o splice_count -e trace=splice cat /dev/zero | head -c1M >/dev/null
 splice_count=$(grep '^splice' splice_count | wc -l)
 
 # Test that splice errors are diagnosed.

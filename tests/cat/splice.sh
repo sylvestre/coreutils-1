@@ -32,7 +32,7 @@ zc_syscalls='io_uring_setup io_uring_enter io_uring_register memfd_create
              sendfile splice tee vmsplice'
 syscalls=$(
   for s in $zc_syscalls; do
-    strace -qe "$s" true >/dev/null 2>&1 && echo "$s"
+    strace -qe trace="$s" true >/dev/null 2>&1 && echo "$s"
   done | paste -s -d,)
 
 no_zero_copy() {

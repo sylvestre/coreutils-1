@@ -32,7 +32,7 @@ touch a b || framework_failure_
 ln b b2 || framework_failure_
 
 
-strace -qe unlink mv a b > out 2>&1 || fail=1
+strace -qe trace=unlink mv a b > out 2>&1 || fail=1
 $EGREP 'unlink.*"b"' out && fail=1
 
 # Ensure that the source, "a", is gone.

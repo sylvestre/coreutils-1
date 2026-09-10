@@ -23,7 +23,7 @@ require_inotify_supported_
 
 require_strace_ 'inotify_add_watch'
 
-returns_ 124 timeout .1 strace -e inotify_add_watch -o strace.out \
+returns_ 124 timeout .1 strace -e trace=inotify_add_watch -o strace.out \
   tail -f /dev/null || fail=1
 
 grep 'inotify' strace.out && fail=1

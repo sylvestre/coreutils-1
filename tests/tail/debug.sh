@@ -56,7 +56,7 @@ cleanup_
 
 touch file.debug
 require_strace_ 'inotify_add_watch'
-returns_ 124 timeout .1 strace -e inotify_add_watch -o strace.out \
+returns_ 124 timeout .1 strace -e trace=inotify_add_watch -o strace.out \
   tail -F file.debug || fail=1
 if grep 'inotify' strace.out; then
   timeout 10 tail --debug -n0 -f file.debug 2>debug.out & pid=$!

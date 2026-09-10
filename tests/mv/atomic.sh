@@ -34,7 +34,7 @@ ln -s t1 s1 || framework_failure_
 ln -s t2 s2 || framework_failure_
 
 
-strace -qe unlink mv -T s1 s2 > out 2>&1 || fail=1
+strace -qe trace=unlink mv -T s1 s2 > out 2>&1 || fail=1
 $EGREP 'unlink.*"s1"' out && fail=1
 
 # Ensure that the source, s1, is gone.

@@ -23,7 +23,7 @@ uses_strace_
 
 # Ensure new enough Linux systems
 # as otherwise cpu_quota() will not call sched_getscheduler()
-strace -o getsched_count -e sched_getscheduler nproc
+strace -o getsched_count -e trace=sched_getscheduler nproc
 getsched_count=$(grep '^sched_getscheduler' getsched_count | wc -l)
 test "$getsched_count" -ge 1 ||
   skip_ 'sched_getscheduler() call not detected'
