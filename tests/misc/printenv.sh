@@ -102,7 +102,8 @@ done
 for qs in literal shell c; do
   env -i PATH="$PATH" QUOTING_STYLE=$qs 'a b'='c d' \
     printenv >out-t 2>err || fail=1
-  grep -vE '^["'"'"']?(__CF_USER_TEXT_ENCODING|QUOTING_STYLE|PATH)["'"'"']?=' \
+  grep -vE '^["'"'"']?'\
+'(__CF_USER_TEXT_ENCODING|QUOTING_STYLE|(LD_ORIGIN_)?PATH)["'"'"']?=' \
     out-t >out || framework_failure_
   compare exp-noargs-$qs out || fail=1
   compare /dev/null err || fail=1
