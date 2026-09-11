@@ -77,7 +77,9 @@ test -f xaa && fail=1
 # rather than crashing or hanging.
 rm -f x*
 vm=$(get_min_ulimit_v_ split -a 1 /dev/null)
-if test -n "$vm"; then
+# TODO: This makes GNU/Hurd VMs hang, requiring a restart.
+# Remove the 'uname' check once it is fixed.
+if test "$(uname)" != GNU && test -n "$vm"; then
   (ulimit -v $(($vm+6000)) &&
    touch ulimit-worked &&
    returns_ 1 split -a 66542562175252 in) ||
