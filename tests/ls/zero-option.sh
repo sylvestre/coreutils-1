@@ -37,4 +37,12 @@ printf '%s\0' a b cc 'com,ma' "$newline" >exp || framework_failure_
 
 compare exp out || fail=1
 
+# --zero must also terminate column output with NUL when it precedes -C or -x
+mkdir dir2 && touch dir2/a dir2/b || framework_failure_
+printf 'a  b\0' > exp || framework_failure_
+for opt in -C -x; do
+  LC_ALL=C ls --zero $opt -w 80 dir2 >out || fail=1
+  compare exp out || fail=1
+done
+
 Exit $fail
