@@ -142,6 +142,16 @@ my @Tests =
       {AUX=>{f=>"$d0 $t0 UTC +1 hour\n$d0 $t0 UTC +1 hour"}},
       {OUT=>"$d0 $th\n$d0 $th"}],
 
+     # With multiple --file options, the last one wins.
+     ['multi-file-last-wins', "-u --file=f --file=g '+%Y-%m-%d %T'",
+      {AUX=>{f=>"$d0 $t0", g=>"$dd $th"}},
+      {OUT=>"$dd $th"}],
+
+     # An earlier --file is ignored even if the last one is empty.
+     ['multi-file-last-empty', "-u --file=f --file=g '+%Y-%m-%d %T'",
+      {AUX=>{f=>"$d0 $t0", g=>""}},
+      {OUT=>""}],
+
      # From the examples in the documentation.
      ['date2sec-0', "-d '1970-01-01 00:00:01' +%s", {OUT=>"7201"},
       {ENV => 'TZ=UTC+2'}],
