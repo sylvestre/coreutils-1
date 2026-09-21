@@ -89,5 +89,18 @@ dd bs=1 skip="$1" count="$(($2 - $1))" < out > actual 2>/dev/null \
 printf %s "$newline" > exp || framework_failure_
 compare exp actual || fail=1
 
+# //DIRED-OPTIONS// must report the name of the quoting style in effect.
+for style in literal shell shell-always shell-escape shell-escape-always \
+             c escape locale clocale; do
+  LC_ALL=C ls -l --dired --quoting-style=$style dir > out || fail=1
+  grep "^//DIRED-OPTIONS// --quoting-style=$style\$" out > /dev/null \
+    || { echo "wrong quoting style name for $style:"; tail -n1 out; fail=1; }
+done
+for opt in -N -Q -b; do
+  case $opt in -N) style=literal;; -Q) style=c;; -b) style=escape;; esac
+  LC_ALL=C ls -l --dired $opt dir > out || fail=1
+  grep "^//DIRED-OPTIONS// --quoting-style=$style\$" out > /dev/null \
+    || { echo "wrong quoting style name for $opt:"; tail -n1 out; fail=1; }
+done
 
 Exit $fail
