@@ -53,6 +53,18 @@ my @Tests =
    ['bw1', '-b -w 4', {IN=>"abcdef\nghijkl"}, {OUT=>"abcd\nef\nghij\nkl"}],
    ['bw2', '-b -w 6', {IN=>"1234567890\nabcdefghij\n1234567890"},
      {OUT=>"123456\n7890\nabcdef\nghij\n123456\n7890"}],
+
+   # Only tab, backspace and carriage return are special; other control
+   # characters take one column, except NUL, which takes none.
+   ['ctrl-1', '-w2', {IN=>"ab\033cd"}, {OUT=>"ab\n\033c\nd"}],
+   ['ctrl-2', '-w1', {IN=>"\f0"}, {OUT=>"\f\n0"}],
+   ['ctrl-3', '-w2', {IN=>"a\177b\n"}, {OUT=>"a\177\nb\n"}],
+   ['ctrl-4', '-w2', {IN=>"ab\001\001cd\n"}, {OUT=>"ab\n\001\001\ncd\n"}],
+   ['ctrl-5', '-s -w3', {IN=>"a \001b\n"}, {OUT=>"a \n\001b\n"}],
+   ['ctrl-6', '-w2', {IN=>"ab\0cd\n"}, {OUT=>"ab\0\ncd\n"}],
+   ['ctrl-7', '-w2', {IN=>"ab\0cd\377\n"}, {OUT=>"ab\0\ncd\n\377\n"}],
+   # No newline is added after a control character filling the last line.
+   ['ctrl-8', '-c -w2', {IN=>"a\001"}, {OUT=>"a\001"}],
   );
 
 # define UTF-8 encoded multi-byte characters for tests
@@ -65,6 +77,8 @@ my @mbTests =
      ['smb1', '-w2', {IN=>$eaC x 3}, {OUT=>$eaC x 2 . "\n" . $eaC}],
      ['smb2', '-w2', {IN=>$eaD x 3}, {OUT=>$eaD x 2 . "\n" . $eaD}],
      ['smb3', '-w2', {IN=>$eFW x 2}, {OUT=>$eFW . "\n" . $eFW}],
+     ['smb-ctrl-1', '-w2', {IN=>"$eaC\001xy\n"}, {OUT=>"$eaC\001\nxy\n"}],
+     ['smb-ctrl-2', '-w1', {IN=>"$eaC\0$eaC\n"}, {OUT=>"$eaC\0\n$eaC\n"}],
   );
 
 if ($mb_locale ne 'C')
