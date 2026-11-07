@@ -39,6 +39,20 @@ cat <<\EOF > exp
 EOF
 compare exp out || fail=1
 
+# Unnumbered lines are padded by the number width plus the byte length
+# of the separator, so the text stays aligned.
+printf 'a\n\nb\n' > inp || framework_failure_
+check_sep_pad ()
+{
+  nl -s "$1" inp > out || fail=1
+  printf '     1%sa\n%s\n     2%sb\n' "$1" "$2" "$1" > exp \
+    || framework_failure_
+  compare exp out || fail=1
+}
+check_sep_pad ':-:' '         '
+check_sep_pad '' '      '
+check_sep_pad "$(printf '\303\251')" '        '
+
 # Ensure numbering reset at each delimiter.
 # coreutils <= v8.25 only reset at a page header.
 printf '%s\n' '\:\:\:' a '\:\:' b '\:' c > in.txt || framework_failure_
