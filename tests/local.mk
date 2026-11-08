@@ -120,6 +120,7 @@ all_root_tests =				\
   tests/df/over-mount-device.sh			\
   tests/du/bind-mount-dir-cycle.sh		\
   tests/du/bind-mount-dir-cycle-v2.sh		\
+  tests/groups/groups-real-gid.sh		\
   tests/id/setgid.sh				\
   tests/install/install-C-root.sh		\
   tests/ls/capability.sh			\
